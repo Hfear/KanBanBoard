@@ -2,4 +2,9 @@
 //        (addTask, markCompleted, listTasks, etc.).
 
 public interface ITaskManager {
+
+    public void addTask(Task task);
+    public void markCompleted(Task task);
+    public void listTasks();
+
 }
