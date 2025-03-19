@@ -1,5 +1,7 @@
 //TaskManager (Class) – Implements ITaskManager,
 //manages a collection of tasks.
+import java.util.List;
+import java.util.ArrayList;
 
 public class TaskManager implements ITaskManager {
 
@@ -11,17 +13,18 @@ public class TaskManager implements ITaskManager {
     public void addTask(Task task)
     {
         taskList.add(task);
-    };
+    }
 
     public boolean markCompleted(Task task)
     {
+        task.setStatus(true);
+        return true;
+    }
 
-    };
-
-    public void listTasks()
+    public List<Task> listTasks()
     {
-
-    };
+        return taskList;
+    }
 
 }
 

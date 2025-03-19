@@ -10,6 +10,12 @@ private boolean status;
 
 
 //Builder method constructors
+public static Task create()
+{
+    return new Task();
+}
+
+
 public Task setTitle(String title){
     this.title = title;
     return this;
@@ -27,5 +33,13 @@ public Task setStatus(boolean status){
     return this;
 }
 
-
+    public String getDescription() {
+        return description;
+    }
+    public int getPriority() {
+    return priority;
+    }
+    public String getTitle() {
+    return title;
+    }
 }
